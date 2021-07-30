@@ -1,0 +1,48 @@
+body{
+    background:  #58acf4;
+    font: nomal 15 pt; 
+}
+
+header{
+    color:#fefefe;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding-top: 5px;
+}
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    background: #fefefe;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #412a1e7c;
+
+}
+
+footer{
+    color: #fefefe;
+    text-align: center;
+}
+
+
+
+/*
+ #c8472c; vermelho 
+#412a1e; marron
+#f8de3c; amarelo
+#fefefe; branco
+ #58acf4; azul
+#105edd; azul mais escuro
+ #0b3075; roxo
+*/
