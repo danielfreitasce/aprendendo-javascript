@@ -1,6 +1,6 @@
-#Exércicos do Curso em Vídeo 
+# Exércicos do Curso em Vídeo :man_technologist: 
 
-Nesta pasta você encontra as atividades realizadas durante o curso em vídeo com o Gustavo Guanabara.
+Nesta pasta você encontra as atividades realizadas durante o Curso em Vídeo de JavaScript com o Gustavo Guanabara.
 
 
 
