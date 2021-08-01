@@ -1,3 +1,5 @@
+/**Calculo simples de multas!*/
+
 function calcular(){
     const vel_max = 80
     
