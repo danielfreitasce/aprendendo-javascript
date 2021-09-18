@@ -19,5 +19,17 @@ function imprimirIdade2() {
     }
 }
 
-imprimirIdade2() //iremos receber um erro ao executar esta função, 
+//imprimirIdade2() //iremos receber um erro ao executar esta função, 
 //porque uma variável const não muda de valor
+
+const pessoa = {
+    nome: 'Daniel',
+    idade: 33
+}
+
+function imprimirDadosPessoa() {
+    console.log(`Nome: ${pessoa.nome} e idade: ${pessoa.idade}`)
+}
+
+imprimirDadosPessoa()
+
