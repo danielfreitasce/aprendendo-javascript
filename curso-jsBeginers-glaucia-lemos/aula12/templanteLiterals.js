@@ -35,4 +35,4 @@ const getValue = (num) => {
     return num + num
 }
 
-console.log(`Resultado: ${getValue(10)}`) //saida:20
+console.log(`Resultado: ${getValue(10)}`)//saida:20
