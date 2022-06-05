@@ -1,4 +1,4 @@
-# console.log('Apredendo JavaScript :rocket:') 
+# console.log('Aprendendo JavaScript :rocket:') 
 
 <p align="center">
    <img alt="#Curso JavaScript" src="https://camo.githubusercontent.com/5e4e512a9fba4d33300fa431e2c5fb07d476d5f15194bc75dfbf3da545f73e43/68747470733a2f2f63646e2e69636f6e73636f75742e636f6d2f69636f6e2f667265652f706e672d3235362f6a6176617363726970742d323735323134382d323238343936352e706e67" /> 
