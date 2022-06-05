@@ -6,25 +6,31 @@ let pontuacao = document.querySelector('.score');
 let mensagem = document.querySelector('.message');
 
 let pontuacaoMax = localStorage.getItem('pontuacaoMax') != null ? localStorage.getItem('pontuacaoMax') : 0;
-document.querySelector('.highscore').textContent = pontuacaoMax;
+let highscoreElemento = document.querySelector('.highscore');
+highscoreElemento.textContent= pontuacaoMax;
 
 let inputGuess = document.querySelector('.guess'); 
+let check = document.querySelector('.check');
 
 inputGuess.addEventListener('keypress', (event) =>{
     if (event.key === "Enter") {
-        document.querySelector('.check').click();
+        check.click();
     }   
 })
 
-document.querySelector('.check').addEventListener('click', () =>{
+check.addEventListener('click', () =>{
     
     const palpite = Number(inputGuess.value);
 
     if(palpite === numeroSecreto){
         
-        document.querySelector('.number').textContent = numeroSecreto;
-        document.querySelector('.highscore').textContent = pontuacao.textContent; 
-        document.querySelector('body').style ="background-color : #60b347";
+        let numero = document.querySelector('.number');
+        numero.textContent = numeroSecreto;
+        numero.style.width = '30rem';
+
+        highscoreElemento.textContent = Number(pontuacao.textContent) >= Number(highscoreElemento.textContent) ? pontuacao.textContent : Number(highscoreElemento.textContent); 
+
+        document.querySelector('body').style.backgroundColor ='#60b347';
         mensagem.textContent = '🎉 Acertou!';
         mostrarConfete();
         return; 
@@ -37,10 +43,11 @@ document.querySelector('.check').addEventListener('click', () =>{
 
    let pontuacaoAtual = Number(pontuacao.textContent); 
    pontuacao.textContent = `${pontuacaoAtual - 1}`; 
+   console.log(' pontuacao.textContent ' +  pontuacao.textContent);
 
    if(Number(pontuacao.textContent) <= 0){
 
-        let botaoCheck = document.querySelector('.check');
+        let botaoCheck = check;
         botaoCheck.disabled = true;
         botaoCheck.style = 'background-color: #6a6f73; cursor: not-allowed'
         mensagem.textContent = '💥 Você perdeu o jogo';
@@ -57,7 +64,11 @@ document.querySelector('.again').addEventListener('click', ()=>{
     
     if(document.querySelector('.guess').value)
     {
-        let pMax = pontuacao.textContent;
+        let pontuacaoAtual = Number(pontuacao.textContent); 
+
+        let pontuacaoMaxAtual = Number(highscoreElemento.textContent);
+
+        let pMax = pontuacaoAtual >= pontuacaoMaxAtual ? pontuacaoAtual : pontuacaoMaxAtual;
         localStorage.setItem("pontuacaoMax", pMax);
         location.reload();
     }
