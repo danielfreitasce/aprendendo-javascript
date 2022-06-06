@@ -5,4 +5,4 @@
 <p>Adicionei o recurso de <a href="https://javascript.info/localstorage">logal storage</a> que eu já conhecia e uma mini <a href="https://party.js.org/">biblioteca que adiciona efeitos de confete</a> na página</p>
 
 
-<img src="adivinhe-o-numero.png"/>
+<a href="https://celadon-pony-8bbb5e.netlify.app/"><img src="adivinhe-o-numero.png"/></a>
